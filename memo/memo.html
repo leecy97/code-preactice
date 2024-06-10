@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- 
+  현재 문서가 html로 작성된 웹 문서 언어. 
+-->
+<html lang="ko">
+  <!-- 
+  사용 언어 지정. 
+-->
+  <head>
+    <!-- 
+    웹 브라우저가 웹 문서를 해석하는데 필요한 정보 입력 부분.
+   -->
+    <meta charset="UTF-8" />
+    <!-- 
+    meta: 데이터에 관한 데이터, 보이지 않지만 웹 문서와 관련된 문서 지정.
+             <meta name= "keywords" content="html의 구조"> :웹 문서의 키워드.
+             <meta name= "discription" content="html의 구조를 알아봅시다."> :웹 문서의 설명.
+             <meta name= "author" content="chaeyeon lee"> :웹 문서의 소유자나 제작자.
+             *discription:서술의 / content:내용물,안에든것 / author:작가
+    charset : 캐릭터 셋팅 "UTF-8" : 한글문자.
+ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- *viewport:화면상의 화상 표시 영역 / initial:초기의
+             -->
+    <title>Title_240116</title>
+    <!-- 
+    브라우저 창에 표시되는 웹문서 제목.
+   -->
+
+    css문서연결
+    <link rel="stylesheet" href="문서이름.css" />
+    <!-- 
+    링크 관계= "스타일대지" 하이퍼링크파일="css문서"
+   -->
+
+    문서영역
+    <body>
+      <!-- 
+      실제로 웹 화면에 나타나는 내용. 
+     -->
+      <div class="section article"></div>
+      <!-- 
+      <div 이름부여="이름1 이름2"<div>
+                *div:여러소스를 묶는 태그 / section: 콘텐츠 영역, 부분. / article:(같은 종류의 것의) 한 개, 하나
+      -->
+
+      이미지
+      <img class="map" src="/practice_240116/images/seciont4_img.jpg" alt="" />
+      <!-- 
+    <이미지_이름부여="지도" 파일경로="/상위폴더_하위폴더_이미지_확장자" 이미지설명=""
+   -->
+
+      텍스트
+      <p class="text1">안녕하세요.<br />반갑습니다.</p>
+      <!-- 
+    <텍스트단락 이름부여=:"text1">텍스트내용.<줄바꿈>텍스트내용.<p>
+                *p:paragraph:단락 / br:line break :줄 바꿈
+    -->
+      <sup>*</sup>
+      <!-- 윗첨자 -->
+
+      <sub>*</sub>
+      <!-- 아래첨자 -->
+
+      <span>*</span>
+      <!-- 중간첨자 -->
+
+      인풋(입력태그)
+      <input
+        type="text"
+        type="password"
+        type="email"
+        type="tel"
+        name="project_use"
+        placeholder="[필수] 선택해주세요"
+      />
+      <!--
+        입력방식="글자"
+        입력방식="비밀번호"
+        입력방식="이메일"
+        입력방식="전화번호"
+        이름="input 태그의 이름."
+        고정텍스트="[필수] 선택해주세요"
+      -->
+      아이디
+      <p id="pc">PORTFOLIO PORTFOLIO222</p>
+      <p id="mobile">
+        PORTFOLIO<br />
+        PORTFOLIO222
+      </p>
+      <!-- 
+        <p id="pc에서만보이는">글자 내용</p>
+        <p id="mobile에서만보이는">
+        글자 내용1
+        <br />글자 내용2</p>
+       -->
+    </body>
+  </head>
+</html>

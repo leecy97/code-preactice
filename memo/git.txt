@@ -1,0 +1,11 @@
+github에 업로드
+1. 작업 파일 모두 저장
+2. vscoded에서 ctrl + j 
+3. c:\Users\이채연\Desktop\ddongle> 확인
+4. git add . <- 입력 : 현재 폴더에 있는 내용 저장
+5. git commit -m "날짜 입력(ex: 240208_01)" <- 입력 : 현재까지 저장한 내용에 코멘트 달기
+6. git push <- 입력 : github에 업로드
+
+github에서 불러오기
+1. (처음) git clone "github 레포지토리 주소" <- 입력 : github 레포지토리에 있는 내용 복제
+2. (이후) git pull <- 입력 : github에 저장된 내용 당겨오기

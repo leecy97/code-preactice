@@ -1,0 +1,146 @@
+css시작
+* {
+  margin: 0;
+  padding: 0;
+}
+.반응형{
+  모바일
+  @media screen and (max-width: 500px) {
+    /* 미디어 스크린 그리고 500px이하 될 때 설정 =모바일 */
+    #pc {
+      display: none;
+    }
+    /* 모바일에서 pc요소를 숨기기 */
+    #mobile {
+      display: block;
+    }
+    /* 모바일에서 모바일 요소만 보이기 */
+  }
+  #mobile {
+    display: none;
+  }
+    /* pc화면에 모바일 요소 숨기기 */
+  태블릿
+  @media screen and (min-width: 500px) and (max-width: 1024px) {
+  }
+    /* 500이상 1024이하에서만 보이기 */
+}
+
+
+.영역 {
+  width: 100%;
+  /* 넓이 */
+  height: 51.09vw;
+  /* 높이 */
+  border: 1px solid black;
+  /* 테두리: 1px 채우다 검정; */
+  [자식요소이하 선택 설정]
+  .section .article_container img:nth-child(n)
+  /* .section .article_container 클래스의 자식요소 중 img를 고르는데, 그 img는 여러 자식 요소 중에 n 번째 일 때. */
+  .section .article_container img:nth-child(2n)
+  /* .section .article_container 클래스의 img의 자식요소 (짝수번쨰) */
+  .section .article_container img:nth-child(2n+1)
+  /* .section .article_container 클래스의 img의 자식요소 (홀수번쨰) */
+  .section .article_container img:first-child
+  /* .section .article_container 클래스의 img의 자식요소 (첫번째) */
+  .section .article_container img:last-child
+  /* .section .article_container 클래스의 img의 자식요소 (마지막) */
+  [자식요소만 선택 설정]
+  .section .article_container > img
+  /* .section .article_container 클래스의 자식 요소인 img만(손자 부턴 포함 X) */
+
+}
+
+
+.여백 {
+  margin-top: vw;
+  /* 여백- 위: vw; */
+  margin-left: vw;
+  /* 여백- 좌: vw; */
+  margin: 1vw 2vw 3vw 2vw;
+  /* 여백- 상1vw 우2vw 하3vw 좌2vw; */
+  margin: 1vw 2vw;
+  /* 상하 1vw 좌우 2vw; */
+  margin: 0 auto;
+  /* 상하 0vw 좌우 최대치밀어넣기;*/
+  margin-right: auto;
+  /* 여백-우: 최대치밀어넣기; */
+}
+
+
+.정렬 {
+  display: flex;
+  /* 표시, 표명: 유연하게; */
+  flex-wrap: wrap;
+  
+                 /* 유연하게-감싸다: 감싸다; */ 
+  flex-direction: column;
+  [주축축변경]
+                 /* 유연하게-방향: 기둥; */ 
+  align-items: center;
+  [교차축중간정렬]
+                 /* 정렬-항목: 중간; */ 
+  align-items: end; 
+  [교차축하위끝정렬]
+                 /* 정렬-항목: 끝; */ 
+  align-content: space-between;
+  [교차축양끝정렬]
+                 /* 정렬-내용물: 양쪽; */ 
+  justify-content: center;
+  [주축하위끝정렬]
+                 /* 정렬-내용물: 중간; */ 
+  justify-content: space-between;
+  [주축양끝정렬]
+                 /* 정렬-내용물: 양쪽; */     
+  display: inline;
+  [기본정렬로바꾸기]
+                 /* 표시: 렬; */   
+  {{*절대좌표(레이어)*     
+  position: relative;
+  (상위영역에 선언/코드삽입)
+  /* 위치: 관계;*/
+  position: absolute;
+  (하위영역에 선언/코드삽입)
+  /* 위치: 절대적인;*/
+  top: 50%/vw;
+  left: 50%/vw;
+  /* 좌표설정 */
+  transform: translate(-50%, -50%);
+  /* 기지모 변경(좌표설정) */}
+  [레이어 밑에 깔기]
+  z-index: -1;
+  /* 레이어 밑에 깔기 */
+}
+
+
+
+  .텍스트 {
+  font-size: 1.04vw;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+  [세로정렬]
+  /* 문자-정렬: 중간; */  
+  line-height: vw; 
+  [행간]
+  /* 선-높이: ; */  
+  letter-spacing: vw; 
+  [자간]
+  /* 글자-공간: ; */
+}
+
+
+.이미지 {
+  백그라운드 이미지
+  background-image: url("/practice/240224/240224_02_img/main_bg4.jpg");
+  백그라운드 이미지 사이즈
+  background-size: cover;:이미지 사이즈를 이미지 부모요소에 꽉 채우기
+  이미지 맞춤
+  fit-content;
+}
+
+
+.효과 {
+  cursor: pointer;
+  /* 커서: 포인터; 마우스 누르기 모양 */
+}
