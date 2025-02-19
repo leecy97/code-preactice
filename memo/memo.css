@@ -2,6 +2,11 @@ css시작
 * {
   margin: 0;
   padding: 0;
+  [css적용 안될 때  ]
+  /* 저장 안했을 때
+  디브가 안 맞을 때
+  철자가 틀렸을 때
+  파일 연결 상태 */
 }
 .반응형{
   모바일
@@ -127,20 +132,60 @@ css시작
   letter-spacing: vw; 
   [자간]
   /* 글자-공간: ; */
+  [세로문자]
+  writing-mode: vertical-rl; 
+  /* 글자를 세로로 회전*/
+  text-orientation: upright;
+  /* 글자를 세로로 똑바로*/
+  [가로문자]
+  writing-mode: horizontal-tb;
+  /* 글자를 가로로 회전*/
+  text-orientation:  mixed;
+  /* 글자를 가로로 똑바로*/
+
 }
 
 
 .이미지 {
-  백그라운드 이미지
+  [백그라운드 이미지]
   background-image: url("/practice/240224/240224_02_img/main_bg4.jpg");
-  백그라운드 이미지 사이즈
-  background-size: cover;:이미지 사이즈를 이미지 부모요소에 꽉 채우기
-  이미지 맞춤
-  fit-content;
-}
 
+  [백그라운드 이미지 사이즈]
+  background-size: cover;:이미지 사이즈를 이미지 부모요소에 꽉 채우기
+
+  [이미지 맞춤]
+  fit-content;
+
+  [블록요소]
+  display: block;
+  img태그의 이미지를 부모요소에 꽉채우기(너비)
+
+  [object-fit](내용 크기 조정 방식)
+  object-fit: cover;
+  컨테이너 꽉채우기, 원본비율유지, 넘치는부분은 잘림
+  object-fit: fill;
+  왜곡o,컨테이너채우기
+  object-fit: contain;
+  왜곡x,모두 들어가지만 남는공간 생길 수 있음
+  object-fit: none;
+  콘텐츠 크기 유지 삽입
+  object-fit: scale-down;
+  콘텐츠 크기를 줄여 none과 contain 중 더 작은 크기로 표시
+
+ [object-position](콘텐츠(예: <img>, <video>)의 **시작 위치(기준점)**를 설정)
+  object-position: center;
+  컨테이너 정중앙 배치, 미디어중심과 컨테이너중심이 맞춰짐
+  object-position: top; bottom; left; right;
+  콘텐츠를 컨테이너 위쪽 ,아래, 왼쪽, 오른쪽 정렬
+  object-position: 10px 20px;
+  콘텐츠를 가로로 10px, 세로로 20px만큼 이동.
+}
 
 .효과 {
   cursor: pointer;
   /* 커서: 포인터; 마우스 누르기 모양 */
+}
+
+.도형 {
+  원: <div>태그를 border-radius: 50% 주어서 동그라미 만들기
 }

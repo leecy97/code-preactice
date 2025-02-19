@@ -1,0 +1,19 @@
+터미널 사용법
+
+예시 경로:C:/Users/이채연/Desktop/practicecode/jabascript>
+
+*cd ..
+최하위 경로 삭제 명령어
+:C:/Users/이채연/Desktop/practicecode/jabascript>cd ..
+
+*cd 폴더명
+C:\Users\이채연\Desktop\practicecode>cd jabascript
+→C:\Users\이채연\Desktop\practicecode\jabascript>
+
+*node 파일명
+노드로 폴더 실행1번
+C:\Users\이채연\Desktop\practicecode\jabascript>node practice.js
+
+*nodemon 파일명
+노드로 폴더 저장할 때마다 자동 실행
+C:\Users\이채연\Desktop\practicecode\jabascript>nodemon practice.js
