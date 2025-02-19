@@ -18,3 +18,8 @@ const sum = (num1, num2) => {
   반환;
   함수이름.함수('인자1 + 인자2');
 };
+예시
+const multiple = (num1, num2, num3) => {
+  return num1 * num2 - num3; }
+  multiple(3, 4, 5);
+  7
